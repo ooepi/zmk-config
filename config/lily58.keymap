@@ -14,28 +14,52 @@
         aumlaut: aumlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N2>
+                , <&macro_release &kp LALT>
+                ;
             label = "AUMLAUT";
         };
 
         aumlautcaps: aumlautcaps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N2>
+                , <&macro_release &kp LALT>
+                ;
             label = "AUMLAUTCAPS";
         };
 
         oumlaut: oumlaut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N8>
+                , <&macro_release &kp LALT>
+                ;
             label = "OUMLAUT";
         };
 
         oumlautcaps: oumlautcaps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N3>
+                , <&macro_release &kp LALT>
+                ;
             label = "OUMLAUTCAPS";
         };
     };
