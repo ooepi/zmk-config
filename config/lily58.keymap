@@ -106,7 +106,7 @@
 &trans      &trans            &trans             &trans             &trans        &trans                                    &trans            &kp HOME    &kp UP_ARROW  &kp END          &kp DELETE    &aumlautcaps
 &kp LSHIFT  &trans            &trans             &trans             &trans        &trans                                    &trans            &kp LEFT    &kp DOWN      &kp RIGHT        &kp ENTER     &oumlautcaps
 &kp LCTRL   &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans       &trans         &trans            &mkp MB4    &mkp MB5      &trans           &trans        &kp ENTER
-                                                 &trans             &trans        &trans        &kp SPACE    &kp LA(SPACE)  &trans            &trans      &trans
+                                                 &trans             &trans        &trans        &kp SPACE    &kp LA(SPACE)  &kp BACKSPACE     &trans      &trans
             >;
         };
 
@@ -123,7 +123,7 @@
 &kp TAB         &kp GRAVE  &kp TILDE       &trans            &trans                &trans                            &trans       &kp SLASH              &kp BACKSLASH      &kp PIPE         &kp MINUS      &kp MINUS
 &kp LEFT_SHIFT  &kp COLON  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans                            &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SEMICOLON  &kp SQT
 &kp LCTRL       &trans     &trans          &trans            &trans                &trans          &trans    &trans  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &trans           &trans         &trans
-                                           &trans            &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans  &trans       &trans                 &trans
+                                           &kp LEFT_ALT      &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans  &trans       &trans                 &trans
             >;
         };
 
@@ -132,7 +132,7 @@
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8     &kp N9   &kp N0     &kp BSPC
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                           &kp Y   &kp U     &kp I      &kp O    &kp P      &oumlaut
 &kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G                           &kp H   &kp J     &kp K      &kp L    &oumlaut   &oumlautcaps
-&kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &tog 0       &tog 4     &kp N   &kp M     &kp COMMA  &kp DOT  &kp MINUS  &kp ENTER
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &tog 3       &tog 4     &kp N   &kp M     &kp COMMA  &kp DOT  &kp MINUS  &kp ENTER
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp SPACE  &mo 2   &kp RALT  &kp RGUI
             >;
         };
@@ -142,7 +142,7 @@
 &kp ESC    &trans  &trans  &trans  &trans  &trans                          &trans  &trans   &kp FSLH  &kp STAR  &kp MINUS  &kp BSPC
 &kp TAB    &trans  &trans  &trans  &trans  &trans                          &trans  &kp N7   &kp N8    &kp N9    &kp PLUS   &kp DEL
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans                          &trans  &kp N4   &kp N5    &kp N6    &kp PLUS   &kp ENTER
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans  &tog 3       &tog 0     &trans  &kp N1   &kp N2    &kp N3    &kp ENTER  &kp ENTER
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans  &tog 3       &tog 4     &trans  &kp N1   &kp N2    &kp N3    &kp ENTER  &kp ENTER
                            &trans  &trans  &trans  &kp SPACE    &kp SPACE  &kp N0  &kp DOT  &kp DOT
             >;
         };
