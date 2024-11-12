@@ -12,17 +12,19 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define U_MOUSE_MOVE_MAX 1400                     /* <--- New max speed setting (default: 600) */
+
 #undef MOVE_UP
 #undef MOVE_DOWN
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
+
 #define MOVE_UP MOVE_Y(-U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN MOVE_Y(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_X(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_X(U_MOUSE_MOVE_MAX)
 
 &mmv {
-	time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
+    time-to-max-speed-ms = <400>;             /* <--- How long time until max speed is reached (default: 500) */
 };
 
 / {
@@ -103,7 +105,7 @@
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7         &kp N8     &kp N9   &kp N0         &kp BACKSPACE
 &kp TAB           &kp Q   &kp W   &kp F     &kp P     &kp B                           &kp J   &kp L          &kp U      &kp Y    &kp SEMICOLON  &oumlaut
 &kp LEFT_SHIFT    &kp A   &kp R   &kp S     &kp T     &kp G                           &kp M   &kp N          &kp E      &kp I    &kp O          &aumlaut
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D     &kp V   &tog 3       &tog 4     &kp K   &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D     &kp V   &mo 5        &tog 4     &kp K   &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
                                   &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp SPACE  &mo 2   &kp RIGHT_ALT  &kp RGUI
             >;
         };
@@ -137,7 +139,7 @@
 &kp F1          &kp F2     &kp F3          &kp F4            &kp F5                &kp F6                            &kp F7       &kp F8                 &kp F9             &kp F10          &kp F11        &kp F12
 &kp TAB         &kp GRAVE  &kp TILDE       &trans            &trans                &trans                            &trans       &kp SLASH              &kp BACKSLASH      &kp PIPE         &kp MINUS      &kp MINUS
 &kp LEFT_SHIFT  &kp COLON  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans                            &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SEMICOLON  &kp SQT
-&kp LCTRL       &trans     &trans          &trans            &trans                &trans          &trans    &trans  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &trans           &trans         &trans
+&kp LCTRL       &trans     &trans          &trans            &trans                &trans          &tog 3    &trans  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &trans           &trans         &trans
                                            &kp LEFT_ALT      &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans  &trans       &trans                 &trans
             >;
         };
@@ -157,8 +159,18 @@
 &kp ESC    &trans  &trans          &trans          &trans           &trans                           &trans  &trans   &kp FSLH  &kp STAR  &kp MINUS  &kp BSPC
 &kp TAB    &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans                           &trans  &kp N7   &kp N8    &kp N9    &kp PLUS   &kp DEL
 &kp LSHFT  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                           &trans  &kp N4   &kp N5    &kp N6    &kp PLUS   &kp ENTER
-&kp LCTRL  &trans  &trans          &trans          &trans           &trans    &tog 3      &tog 4     &trans  &kp N1   &kp N2    &kp N3    &kp ENTER  &kp ENTER
+&kp LCTRL  &trans  &trans          &trans          &trans           &trans    &mo 5       &tog 4     &trans  &kp N1   &kp N2    &kp N3    &kp ENTER  &kp ENTER
                                    &trans          &mkp MB3         &mkp MB2  &mkp MB1    &kp SPACE  &kp N0  &kp DOT  &kp DOT
+            >;
+        };
+
+        Mousing {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &trans          &trans          &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &msc SCROLL_UP  &mmv MOVE_UP    &msc SCROLL_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                      &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &mkp MB4        &trans          &mkp MB5          &trans  &trans
+                        &trans  &trans  &trans  &trans    &mkp MB1  &mkp MB3  &mkp MB2        &trans
             >;
         };
     };
