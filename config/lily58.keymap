@@ -140,7 +140,7 @@
 &kp TAB         &kp GRAVE  &kp TILDE       &trans            &trans                &kp LA(F4)                        &trans       &kp SLASH              &kp BACKSLASH      &kp PIPE         &kp UNDER      &kp MINUS
 &kp LEFT_SHIFT  &kp COLON  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &trans                            &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp SEMICOLON  &kp SQT
 &kp LCTRL       &trans     &trans          &trans            &trans                &trans          &tog 3    &trans  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &kp QUESTION     &trans         &kp DOUBLE_QUOTES
-                                           &kp LEFT_ALT      &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans  &trans       &trans                 &trans
+                                           &kp LEFT_ALT      &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans  &trans       &trans                 &kp DELETE
             >;
         };
 
