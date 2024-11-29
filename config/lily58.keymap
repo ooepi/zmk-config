@@ -108,6 +108,8 @@
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp D     &kp V   &tog 3    &tog 4     &kp K   &kp H          &kp COMMA      &kp DOT  &kp FSLH       &kp ENTER
                                   &kp LALT  &kp LGUI  &mo 1   &mo 5     &kp SPACE  &mo 2   &kp LG(PG_UP)  &kp LG(PG_DN)
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         Navigation {
