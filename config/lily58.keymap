@@ -109,7 +109,7 @@
                                   &kp LALT  &kp LGUI  &mo 1   &mo 5     &kp SPACE  &mo 2   &kp LG(PG_UP)  &kp LG(PG_DN)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Navigation {
@@ -127,6 +127,8 @@
 &kp LCTRL        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans       &trans         &trans             &mkp MB4      &mkp MB5       &trans             &trans           &kp ENTER
                                                       &trans             &trans        &trans        &kp SPACE    &kp LA(SPACE)  &kp BACKSPACE      &kp LC(LEFT)  &kp LC(RIGHT)
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Programming {
@@ -144,6 +146,8 @@
 &kp LCTRL       &trans     &trans          &trans            &trans                &trans          &tog 3    &kp F12  &kp KP_PLUS  &kp MINUS              &kp EQUAL          &kp QUESTION     &trans         &kp DOUBLE_QUOTES
                                            &kp LEFT_ALT      &kp RC(BACKSPACE)     &kp LC(DELETE)  &trans    &trans   &trans       &trans                 &kp DELETE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Qwerty {
@@ -154,6 +158,8 @@
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &tog 3       &tog 4     &kp N   &kp M     &kp COMMA  &kp DOT  &kp MINUS  &kp ENTER
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp SPACE  &mo 2   &kp RALT  &kp RGUI
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Numpad {
@@ -164,6 +170,8 @@
 &kp LCTRL  &trans  &trans          &trans          &trans           &trans    &mo 5       &tog 4     &trans  &kp N1     &kp N2        &kp N3     &kp ENTER  &kp ENTER
                                    &trans          &mkp MB3         &mkp MB2  &mkp MB1    &kp SPACE  &kp N0  &kp DOT    &kp DOT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Mousing {
@@ -174,6 +182,8 @@
 &trans  &trans  &trans    &trans    &trans    &trans    &tog 5    &trans    &trans    &mkp MB4        &trans          &mkp MB5         &trans  &trans
                           &trans    &mkp MB4  &mkp MB5  &trans    &mkp MB1  &mkp MB3  &mkp MB2        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
