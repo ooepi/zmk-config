@@ -6,7 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include <layouts/kata0510/lily58.dtsi>
+//#include <layouts/kata0510/lily58.dtsi>
 
 / {
     chosen {
@@ -69,9 +69,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     };
 };
 
-&kata0510_lily58_layout {
-    transform = <&default_transform>;
-};
+//&kata0510_lily58_layout {
+//    transform = <&default_transform>;
+//};
 
 &pro_micro_i2c {
     status = "okay";
