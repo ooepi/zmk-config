@@ -131,7 +131,7 @@
                                                       &trans             &trans        &trans        &kp SPACE  &kp LA(SPACE)  &kp BACKSPACE      &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         Programming {
