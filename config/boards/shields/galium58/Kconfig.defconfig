@@ -1,7 +1,7 @@
 if SHIELD_GALIUM58_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Galium58"
+    default "galium58"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
