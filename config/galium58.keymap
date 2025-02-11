@@ -91,13 +91,6 @@
         };
     };
 
-    behaviors {
-        mmv: mouse_move {
-            sensitivity = <5>;  // adjust sensitivity as needed
-            interval = <10>;    // adjust update interval (in milliseconds)
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
