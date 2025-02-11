@@ -21,6 +21,8 @@ include:
   - board: nice_nano_v2
     shield: galium58_left nice_view_adapter nice_view
     snippet: zmk-usb-logging
+    artifact-name: galium58_left_with_logging
   - board: nice_nano_v2
     shield: galium58_right nice_view_adapter nice_view
     snippet: zmk-usb-logging
+    artifact-name: galium58_right_with_logging
