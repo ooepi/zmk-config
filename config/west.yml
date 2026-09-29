@@ -1,0 +1,29 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
+    - name: gpeye
+      url-base: https://github.com/GPeye
+    - name: kevinpastor
+      url-base: https://github.com/kevinpastor
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+      import: app/west.yml
+    - name: zmk-helpers
+      remote: urob
+      revision: v0.3
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: 9c16436efa4c87d19e2e4558927969c7ddd5851d
+    - name: nice-view-elemental
+      remote: kevinpastor
+      revision: 69c2ecd56b0b870ddb94b79110ef5a2152ca4a3a
+  self:
+    path: config
