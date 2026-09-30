@@ -39,62 +39,6 @@
             tap-ms = <20>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
-
-        ht: ht {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
-
-        mm: mm {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-        };
-
-        td: td {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp B>;
-        };
-
-        mm_2: mm_2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-        };
-    };
-
-    macros {
-        macro: macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp A>, <&kp A>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo_1 {
-            key-positions = <14 15>;
-            bindings = <&kp J>;
-        };
-
-        combo_2 {
-            key-positions = <17 29>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_3 {
-            key-positions = <19 20 31 32>;
-            bindings = <&kp K>;
-        };
     };
 
     keymap {
