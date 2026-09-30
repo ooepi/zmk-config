@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: dsifry
+      url-base: https://github.com/dsifry
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,5 +17,8 @@ manifest:
     - name: zmk-unicode
       remote: urob
       revision: v0.3
+    - name: nice-view-mod
+      remote: dsifry
+      revision: 5f328cce749b2760cb61dcac30db29432685af69
   self:
     path: config
