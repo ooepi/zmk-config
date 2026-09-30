@@ -68,13 +68,13 @@
             // | LA(LC(TAB)) |                 | GUI              | LC(G)            |      |     |                 | LC(BACKSPACE) | HOME     | UP        | END   | DEL   | LC(DELETE) |
             // | SHIFT       |                 |                  | NUM              | MOUS |     |                 | LC(DELETE)    | LEFT     | DOWN      | RIGHT | ENTER | ENTER      |
             // | CTRL        | EXT_POWER EP_ON | EXT_POWER EP_OFF | EXT_POWER EP_TOG |      |     |     |           |               | MKP MB4  | MKP MB5   |       |       | ENTER      |
-            //                                                    |                  |      |     | SPC | LA(SPACE) | BSPC          | LC(LEFT) | LC(RIGHT) |
+            //                                                    | STUDIO_UNLOCK    |      |     | SPC | LA(SPACE) | BSPC          | LC(LEFT) | LC(RIGHT) |
             bindings = <
                 &bt BT_CLR       &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                            &kp C_PLAY_PAUSE   &kp C_PREV    &kp C_NEXT     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp DELETE
                 &kp LA(LC(TAB))  &trans            &kp LEFT_WIN       &kp LC(G)          &trans        &trans                                  &kp LC(BACKSPACE)  &kp HOME      &kp UP_ARROW   &kp END            &kp DELETE       &kp LC(DELETE)
                 &kp LSHIFT       &trans            &trans             &mo 4              &mo 5         &trans                                  &kp LC(DELETE)     &kp LEFT      &kp DOWN       &kp RIGHT          &kp ENTER        &kp ENTER
                 &kp LCTRL        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans     &trans         &trans             &mkp MB4      &mkp MB5       &trans             &trans           &kp ENTER
-                                                                      &trans             &trans        &trans        &kp SPACE  &kp LA(SPACE)  &kp BACKSPACE      &kp LC(LEFT)  &kp LC(RIGHT)
+                                                                      &studio_unlock     &trans        &trans        &kp SPACE  &kp LA(SPACE)  &kp BACKSPACE      &kp LC(LEFT)  &kp LC(RIGHT)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -150,6 +150,14 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        extra_1 {
+            status = "reserved";
+        };
+
+        extra_2 {
+            status = "reserved";
         };
     };
 };
